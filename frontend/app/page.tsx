@@ -53,9 +53,9 @@ export default function Home() {
 
  {arr.map(el=>{
   return <>
-       <div className="rounded-lg flex flex-col p-6 gap-3 border border-gray-300 shadow-sm aspect-[1/0.4] shadow-lg transition-transform duration-300 transform hover:scale-[1.01]">
+       <div className="rounded-lg flex flex-col p-6 gap-3 border border-gray-300 aspect-[1/0.4] shadow-lg transition-transform duration-300 transform hover:scale-[1.01]">
       <h1 className="font-bold text-black text-xl">{el.heading}</h1> 
-      <p className="text-base text-gray-800 font-medium">
+      <p className="text-base  text-gray-800 font-medium">
         {el.description}
       </p>
     </div>
