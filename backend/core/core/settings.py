@@ -72,6 +72,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'core.wsgi.application'
 
 
+
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
@@ -123,3 +124,5 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+APPEND_SLASH = False
+ALLOWED_HOSTS = ['192.168.158.113', 'localhost', '127.0.0.1', '*']
