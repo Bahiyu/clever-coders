@@ -1,10 +1,9 @@
 "use client";
 
 import { 
-  CreditCard, 
-  Crown, 
+TreePine,
   Home, 
-  MessageCircleQuestion
+
 } from "lucide-react";
 import { usePathname } from "next/navigation";
 
@@ -34,10 +33,14 @@ export const SidebarRoutes = () => {
           label="Home"
           isActive={pathname === "/"}
         />
+          <SidebarItem
+          href="/predection"
+          icon={TreePine}
+          label="Predection"
+          isActive={pathname === "/predection"}
+        />
       </ul>
-      <div className="px-3">
-        <Separator />
-      </div>
+       
       <ul className="flex flex-col gap-y-1 px-3">
         {/* <SidebarItem
           href={pathname}
